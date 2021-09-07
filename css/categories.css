@@ -1,0 +1,95 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.header {
+    background: linear-gradient(45deg, #000000c7, #00000095),url('../img/hair.jpg') no-repeat;
+    height: 200px;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    color: #fff;
+    text-align: center;
+}
+
+.about-section img {
+    height: 150px;
+    margin-bottom: 20px;
+}
+
+.section-header {
+    width: 60%;
+    margin: 50px auto 100px;
+}
+
+.section-header h4 {
+    font-size: 18px;
+    font-weight: 600;
+    color: #6a4031;
+    margin-bottom: 15px;
+}
+
+.categories-section {
+    background: #faf8f8;
+}
+
+.nav-pills .nav-link.active {
+    background: #6a4031 !important;
+}
+
+.product-box img {
+    height: 278px;
+
+}
+
+.image-holder {
+    text-align: center;
+    overflow: hidden;
+}
+
+.image-holder img {
+    transform: scale(0.8);
+    transition: 2s ease-in-out;
+}
+
+.product-box:hover img {
+    transform: scale(1);
+}
+
+.card {
+    background:  #f8dcc6;
+}
+
+.product-box {
+    position: relative;
+}
+
+.product-title p {
+    font-size: 18px;
+    font-weight: 900;
+}
+
+
+
+
+
+
+.price-tag {
+    background: #6a4031;
+    color: #fff;
+    position: absolute;
+    width: 30%;
+    padding: 10px 15px;
+    border-top-right-radius: 50px;
+    border-bottom-right-radius: 50px;
+}
+
+.price-tag p {
+    margin-bottom: 0;
+}

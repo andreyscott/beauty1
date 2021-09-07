@@ -1,0 +1,30 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#footer {
+    background: #553d34;
+    color: #fff;
+}
+
+.footer-logo h3 {
+    font-family: dancer;
+    font-size: 35px;
+    font-weight: 900;
+    letter-spacing: 2px;
+}
+
+#footer ul li{
+    list-style: none;
+}
+
+#footer a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.footer-icons {
+    width: 30%;
+}

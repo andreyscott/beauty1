@@ -1,0 +1,78 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.header {
+    background: linear-gradient(45deg, #000000c7, #00000095),url('../img/hair.jpg') no-repeat;
+    height: 200px;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    color: #fff;
+    text-align: center;
+}
+
+.price {
+    border: 1px solid #ccc;
+    border-left: 0;
+    border-right: 0;
+    padding: 20px 0;
+    margin: 15px 0;
+}
+
+.price p {
+    font-size: 20px;
+}
+
+.product-image {
+    overflow: hidden;
+    transition: 4s ease-in-out;
+}
+.product-image img {
+    transform: scale(0.9);
+}
+.product-image img:hover{
+    transform: scale(1);
+    transition: 3s ease-in-out;
+}
+
+ .rating span.star.active::before, .rating.add-rating span.star:hover::before, .rating span.star:hover span.star::before {
+    color: #eabe12;
+    content: "\f005";
+    font-family: FontAwesome;
+}
+
+.rating span.star::before {
+    color: #eabe12;
+    content: "\f006";
+    font-family: FontAwesome;
+}
+
+.open {
+    transform: translateX(450px);
+}
+
+
+
+@media (max-width: 1199px) {
+.menu .menu-content .sm-horizontal {
+    position: fixed;
+    width: 300px;
+    top: 0;
+    height: 100vh;
+    right: -300px;
+    z-index: 99;
+    -webkit-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+    background: #fff;
+    overflow: scroll;
+    right: 0;
+}
+
+#main-menu {
+    width: 300px;
+    background: blue;
+    margin-left: 80px;
+}
+}

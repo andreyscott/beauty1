@@ -1,0 +1,100 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: Prata;
+    src: url(others/Prata-Regular.ttf);
+}
+@font-face {
+    font-family: work sans;
+    src: url(others/WorkSans-Regular.ttf);
+}
+@font-face {
+    font-family: dancer;
+    src: url(others/DancingScript-Regular.ttf);
+}
+
+
+.top-nav {
+    background: linear-gradient(270deg, #978262, #cbbaa6, #978262);
+    font-family: "Poppins";
+    padding: 5px 0;
+}
+
+
+/* .main-slider {
+    margin-top: 50px;
+} */
+
+.top-nav p {
+    margin-bottom: 0;
+}
+
+.navbar {
+    min-height: 80px;
+    box-shadow: 5px 0 5px rgba(0, 0, 0, 0.15);
+}
+
+.navbar-brand {
+    width: 150px;
+}
+.navbar-nav .nav-item .active {
+    color: #6a4031 !important;
+}
+.navbar-nav .nav-item a {
+    margin-right: 15px !important;
+    color: #978262 !important;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.navbar-nav .nav-item a:hover {
+    color: #6a4031 !important;
+}
+
+
+
+.navbar-nav .dropdown-menu {
+        margin: 0.125rem -42px 0;
+}
+
+.header .breadcrumb {
+    background: transparent !important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.header .breadcrumb a {
+    color: #fff;
+}
+
+.header .breadcrumb-item.active {
+    color: #978262;
+    font-weight: 900;
+}
+
+
+
+@media(max-width: 768px) {
+    .section-header {
+        width: 100%;
+    }
+
+    .navbar-nav .dropdown-menu {
+        margin: 0.125rem 0px 0;
+    }
+
+
+    .footer-links, .footer-portfolio {
+        margin-top: 20px;
+    }
+
+    .customer-reviews .carousel-item .row {
+    margin: 0 50px;
+}
+
+}

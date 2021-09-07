@@ -1,0 +1,123 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.header {
+    background: linear-gradient(45deg, #000000c7, #00000095),url('../img/hair.jpg') no-repeat;
+    height: 200px;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    color: #fff;
+    text-align: center;
+}
+
+.products-section {
+    /* background: linear-gradient(270deg, #978262, #f8dcc6, #978262); */
+     background:  #f8dcc6;
+}
+
+#dye {
+    background: url('../img/products/hair-dyes.png') no-repeat;
+    background-size: cover;
+    height: 290px;
+    background-position: bottom center;
+}
+#strengthen {
+    background: url('../img/products/strengthen.jpg') no-repeat;
+    background-size: cover;
+    height: 290px;
+    background-position: bottom center;
+}
+
+#hair-growth {
+    background: url('../img/products/hair-growth.png') no-repeat;
+    background-size: cover;
+    height: 290px;
+    background-position: bottom center;
+}
+#beauty {
+    background: url('../img/products/hair-beauty.png') no-repeat;
+    background-size: cover;
+    height: 290px;
+    background-position: bottom center;
+}
+
+.card {
+    box-shadow: 0px 33px 62px -20px rgba(0, 0, 0, 0.14);
+    border-radius: 0;
+    border: none;
+    /* height: 300px; */
+    padding: 5px 20px;
+    
+}
+
+.btn-brown {
+    background: #6a4031;
+    color: #fff;
+}
+
+
+.centered-btn a {
+    text-decoration: none;
+}
+
+.centered-btn a:hover {
+    color: #fff;
+}
+
+.card p {
+    font-size: 15px;
+}
+
+.section-header {
+    width: 60%;
+    margin: 50px auto 100px;
+}
+
+.section-header h4 {
+    font-size: 18px;
+    font-weight: 600;
+    color: #6a4031;
+    margin-bottom: 15px;
+}
+
+.product-name {
+    text-align: center;
+    color: #6a4031;
+}
+
+
+.nav-pills .nav-link.active {
+    background: #6a4031 !important;
+}
+.services {
+   
+}
+
+
+
+@media (min-width: 768px) {
+    .card {
+        height: 300px;
+    }
+    .nav-pills .nav-link{
+        width: 200px;
+        text-align: center;
+    }
+}
+
+@media (max-width: 768px) {
+    .section-header {
+        width: 100%;
+    }
+
+    .product-detail {
+        margin-top: 20px;
+    }
+}

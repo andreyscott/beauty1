@@ -1,0 +1,182 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: Prata;
+    src: url(others/Prata-Regular.ttf);
+}
+@font-face {
+    font-family: work sans;
+    src: url(others/WorkSans-Regular.ttf);
+}
+@font-face {
+    font-family: dancer;
+    src: url(others/DancingScript-Regular.ttf);
+}
+
+
+body {
+    font-style: dancer;
+}
+.btn-brown {
+    background: #6a4031;
+    color: #fff;
+}
+.media {
+    margin-top: 100px;
+}
+
+.banner {
+    background: linear-gradient(45deg, #00000067, #00000097),url('../img/natural-hair.jpg');
+    background-repeat: no-repeat;
+    height: 250px;
+    background-size: cover;
+    background-attachment: fixed;
+    padding: 100px 0;
+    color: #fff
+}
+
+.product-box img {
+    height: 278px;
+
+}
+
+.image-holder {
+    text-align: center;
+    overflow: hidden;
+}
+
+.image-holder img {
+    transform: scale(0.8);
+    transition: 2s ease-in-out;
+}
+
+.product-box:hover img {
+    transform: scale(1);
+}
+
+#about-section h4, .mission-heading h4, .section-header h4 {
+    font-family: dancer;
+    font-size: 35px;
+    font-weight: 900;
+    color: #6a4031;
+    letter-spacing: 2px;
+}
+
+.main-slider .carousel img {
+    height: 700px;
+}
+
+
+.footer-logo h3 {
+    font-family: dancer;
+    font-size: 35px;
+    font-weight: 900;
+    letter-spacing: 2px;
+}
+
+
+.card {
+    background:  #f8dcc6;
+}
+
+.product-box {
+    position: relative;
+}
+
+.product-title p {
+    font-size: 18px;
+    font-weight: 900;
+}
+
+
+.price-tag {
+    background: #6a4031;
+    color: #fff;
+    position: absolute;
+    width: 31%;
+    padding: 10px 15px;
+    border-top-right-radius: 50px;
+    border-bottom-right-radius: 50px;
+}
+
+.price-tag p {
+    margin-bottom: 0;
+}
+
+.section-header {
+    width: 60%;
+    margin: 50px auto 100px;
+}
+
+.section-header h4 {
+    /* font-size: 18px;
+    font-weight: 600;
+    color: #6a4031; */
+    margin-bottom: 15px;
+}
+
+.bottled {
+    background:  #f8dcc6;
+}
+
+.customer-reviews {
+    background: #a58a6b;
+}
+
+ .testifier .star.active::before, .testifier .star:hover::before, .testifier .star:hover .star::before {
+    color: #eabe12;
+    content: "\f005";
+    font-family: FontAwesome;
+}
+
+.testifier .fa-star::before {
+    color: #eabe12;
+    content: "\f006";
+    font-family: FontAwesome;
+}
+
+.sub-footer {
+    background: linear-gradient(270deg, #978262, #cbbaa6, #978262);
+}
+
+
+.contact-list li {
+    margin-bottom: 10px;
+}
+
+
+.customer-reviews .carousel-item .row {
+    margin: 0 30px;
+}
+
+.carousel-control-prev, .carousel-control-next {
+    width: 4% !important;
+}
+
+@media(max-width: 768px) {
+
+    .main-slider .carousel img {
+        height: 300px;
+    }
+    .section-header {
+        width: 100%;
+    }
+
+    .navbar-nav .dropdown-menu {
+        margin: 0.125rem 0px 0;
+    }
+
+
+    .footer-links, .footer-portfolio {
+        margin-top: 20px;
+    }
+
+    .customer-reviews .carousel-item .row {
+    margin: 0 50px;
+}
+
+}

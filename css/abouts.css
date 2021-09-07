@@ -1,0 +1,328 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.header {
+    background: linear-gradient(45deg, #000000c7, #00000095),url('../img/hair.jpg') no-repeat;
+    height: 200px;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    color: #fff;
+    text-align: center;
+}
+
+.about-section h4{
+    color: rgb(182, 56, 7);
+}
+
+.about-section h4::after{
+    content: '';
+    background: rgb(182, 56, 7);
+    height: 3px;
+    width: 225px;
+    display: block;
+    margin-top: 10px;
+}
+
+.about-section img {
+    height: 150px;
+    margin-bottom: 20px;
+}
+
+#mission h4{
+    color: rgb(182, 56, 7);
+}
+
+#mission h4::after{
+    content: '';
+    background: rgb(182, 56, 7);
+    height: 3px;
+    width:160px;
+    display: block;
+    margin-top: 10px;
+}
+
+#services{
+    background: linear-gradient(45deg, rgba(0,0,0,0.8),rgba(0,0,0,0.8)), url(../img/hair-2.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    padding: 50px 0;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#services h4{
+    color: rgb(182, 56, 7);
+}
+
+#services h4::after{
+    content: '';
+    background: rgb(182, 56, 7);
+    height: 3px;
+    width:180px;
+    display: block;
+    margin-top: 10px;
+}
+
+.services-hover:hover{
+    background: #a58a6b;
+    cursor: pointer;
+}
+.services-heading{
+    color: rgb(170, 90, 56);
+}
+ 
+.image-sized {
+    height: 160px;
+    width: 100%;
+    border-radius: 50%; 
+} 
+
+.quote{
+    font-size: 16px;
+    line-height: 30px;
+}  
+.quote::before{
+    font-size: 20px;
+    color: #000;
+    position: relative;
+    line-height: 20px;
+    bottom: 15px;
+    right: 10px;
+    top: -15px;
+} 
+.quote-right::after{
+    font-size: 20px;
+    color: #000;
+    position: relative;
+    line-height: 20px;
+    bottom: -15px;
+    left: 10px;
+    top: 15px;
+    /* padding-left: 10px !important; */
+} 
+#testimony{
+    background: #a58a6b;
+}
+#testimony .carousel-indicators{
+    position: static;
+    padding-top: 30px !important;
+} 
+#testimony .carousel-indicators li{
+    background-color: black;
+    width: 12px;
+    height: 12px;
+    margin-left: 5px;
+}
+#testimony .carousel-control-next,
+#testimony .carousel-control-prev{
+    width: auto;
+}
+#testimony .carousel-control-next{
+    right: -50px;
+}
+#testimony .carousel-control-prev{
+    left: -50px;
+}
+#testimony .carousel-control-prev-icon{
+    padding: 6px;
+    color: white;
+}
+#testimony .carousel-control-next-icon{
+    padding: 6px;
+}
+.testimony-text p{
+    font-family: Poppins;
+    font-size: 18px;
+}
+.testifier h4{
+    font-family: Poppins;
+    font-size: 19px;
+    font-weight: 600;
+    color: #6a4031;
+    padding-left: 25px !important;
+}
+.testifier i{
+    color:gold;
+}
+/* end of carousel*/
+
+#team-section h4, h6{
+    color: rgb(182, 56, 7); 
+}
+
+#team-section .team::after{
+    content: '';
+    background: rgb(182, 56, 7);
+    height: 3px;
+    width:140px;
+    display: block;
+    margin-top: 10px;  
+}
+
+/* team */
+.team-section{
+    padding: 30px 0;
+    margin: 60px 0;
+  }
+  .member{
+    padding: 20px 0;
+  }
+  
+  .member .member-details{
+    position: absolute;
+    top: 10px;
+    left: -10px;
+    right: 10px;
+    bottom: -2px;
+    background: #fff;
+    text-align:center;
+    transform: scale(.5);
+    visibility: hidden;
+    transition: .5s;
+  }
+
+  .member .imgbox img{
+    margin: 20px 10%;
+  }
+
+  .member .member-details{
+    width: 80%;
+    margin: 40px;
+  }
+
+  .member:hover .member-details{
+    transform: scale(1);
+    visibility: visible;
+  }
+
+  .member .member-details .content{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+  }
+
+  .member .member-details .content h1{
+    position: relative;
+    margin: 0;
+    padding: 0;
+    font-size: 20px;
+    color: chocolate;
+    text-transform: uppercase;
+  
+  }
+
+  .member .member-details .content h1 span{
+    font-size: 16px;
+    color: #999;
+  }
+
+  .member .member-details .content h1:before {
+    content: "";
+    position: absolute;
+    bottom: -10px;
+    width: 50px;
+    height: 2px;
+    color: #f00;
+    left: 50%;
+    transform: translate(-50%);
+  }
+
+  .member .member-details .content ul{
+    position: relative;
+    display: flex;
+    padding: 0;
+    width: 70%;
+    margin: 30px auto 0;
+    transform: translateY(100px);
+    opacity: 0 ;
+    transition: .5s;
+  }
+
+  .member:hover .member-details .content ul{
+    opacity: 1;
+    transform: translateY(0px);
+  }
+
+  .member .member-details .content ul li{
+    list-style: none;
+    width: 25%;
+    text-align: center;
+  }
+
+  .member .member-details .content ul li a{
+    display: block;
+    color: chocolate;
+    width: 36px;
+    height: 36px;
+    line-height: 36px;
+    border: 1px solid chocolate;
+    border-radius: 50%;
+
+  }
+
+  .member .member-details .content ul li a:hover{
+    background: chocolate;
+    color: #fff;
+    border: 1px solid chocolate;
+  }
+  /* team */
+
+.card{
+    border-radius: 20px;
+    width: 100%;
+    margin-top: 15px;
+}
+#team-section img{
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+    /* height: 280px; */
+    width: 100%;
+}
+.card:hover{
+    box-shadow: 0 0 10px gray;
+}
+.card-title h4{
+    color: rgb(170, 90, 56);
+}
+.card-title p{
+    color: rgb(170, 90, 56);
+}
+  
+.social .fa{
+    color: rgb(170, 90, 56);
+    padding: 4px;
+    border-radius: 50%;
+}
+ .social{
+     display: none !important;
+ }
+
+ .social ul {
+     width: 70%;
+     margin: 0 auto;
+ }
+
+ .card:hover .social{
+     display: block !important;
+     position: relative;
+     transform: translateY(-200px);
+     width: 80%;
+     border-radius: 20px;
+     margin: 0 auto;
+     transition: all ease-in-out 0.7s;
+      border: 1px solid rgb(170, 90, 56);
+ }
+ 
+
+@media(max-width: 768px) {
+    #testimony{
+        display: none;
+    }
+}
